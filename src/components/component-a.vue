@@ -9,7 +9,6 @@
 
 <script>
     module.exports = {
-        replace: true,
         data: function () {
             return {
                 msg: 'I am component A!'
