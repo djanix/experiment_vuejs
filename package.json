@@ -6,11 +6,12 @@
   "author": "Evan You",
   "license": "MIT",
   "scripts": {
-    "dev": "watchify -t vueify -e src/main.js -o build/build.js"
+    "dev": "watchify src/main.js -t vueify -t uglifyify -o build/build.js"
   },
   "devDependencies": {
     "insert-css": "^0.2.0",
     "node-sass": "^0.9.6",
+    "uglifyify": "^2.5.0",
     "vueify": "^0.1.0",
     "watchify": "^1.0.6"
   },
